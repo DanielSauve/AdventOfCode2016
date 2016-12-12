@@ -15,12 +15,8 @@ fn main(){
             rect(i, &mut array);
         }
         else if i.contains("row"){
-            let mut iter = i.split_whitespace();
-            iter.next();
-            iter.next();
-            let rows = iter.next().unwrap().index(2..3);
-            iter.next();
-            let amount = iter.next().unwrap();
+            let rows = i.index(13..14);
+            let amount = i.index(18..);
             row(rows.parse().unwrap(), amount.parse().unwrap(), &mut array);
         }
         else if i.contains("column"){
