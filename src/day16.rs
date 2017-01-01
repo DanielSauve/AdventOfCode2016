@@ -17,11 +17,8 @@ fn main() {
                 }
             }
         }
-        println!("{:?}", a);
-        println!("{:?}", b);
         a.push('0');
         a = a + &b;
-        println!("{:?}", a);
     }
 
     let mut checksum = String::from_str(a.index(0..len)).unwrap();
@@ -29,15 +26,10 @@ fn main() {
     while checksum.len() % 2 == 0 {
         new_checksum = String::new();
         let mut i = 0;
-        println!("{}", checksum);
         while i < checksum.len() {
             if checksum[i..i + 1] == checksum[i + 1..i + 2] {
-                print!("{}", String::from_str(&checksum[i..i + 1]).unwrap());
-                println!("{}", String::from_str(&checksum[i + 1..i + 2]).unwrap());
                 new_checksum.push('1');
             } else {
-                print!("{}", String::from_str(&checksum[i..i + 1]).unwrap());
-                println!("{}", String::from_str(&checksum[i + 1..i + 2]).unwrap());
                 new_checksum.push('0');
             }
             i += 2;
