@@ -47,7 +47,7 @@ fn main() {
                 i += 1;
             }
         } else if (cmd == "cpy" && !toggles.contains(&(i as i64))) ||
-                  (cmd == "jnz" && toggles.contains(&(i as i64))) {
+            (cmd == "jnz" && toggles.contains(&(i as i64))) {
             toggles.remove(&(i as i64));
             let op = line[1].parse::<i64>();
             match op {
@@ -65,7 +65,7 @@ fn main() {
             }
             i += 1;
         } else if (cmd == "jnz" && !toggles.contains(&(i as i64))) ||
-                  (cmd == "cpy" && toggles.contains(&(i as i64))) {
+            (cmd == "cpy" && toggles.contains(&(i as i64))) {
             toggles.remove(&(i as i64));
             let amt: usize;
             let neg: bool;
