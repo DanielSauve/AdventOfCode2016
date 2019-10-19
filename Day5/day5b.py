@@ -5,7 +5,7 @@ output = [None, None, None, None, None, None, None, None]
 count = 0
 index = 0
 while count < 8:
-    test = hashlib.md5(PUZZLE+str(index)).hexdigest()
+    test = hashlib.md5(PUZZLE + str(index)).hexdigest()
     if test[0:5] == '00000':
         try:
             num = int(test[5])
@@ -16,4 +16,4 @@ while count < 8:
             output[num] = test[6]
             count += 1
     index += 1
-print output
+print(output)

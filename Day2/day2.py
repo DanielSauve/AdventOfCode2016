@@ -22,4 +22,4 @@ for row in f:
         if x > 2:
             x = 2
     code.append(pad[y][x])
-print code
+print(code)

@@ -1,4 +1,5 @@
 import re
+
 f = open('day7.txt', 'r').read().split("\n")
 count = 0
 ssl = 0
@@ -19,12 +20,13 @@ for i in f:
         ssl += 1
         ssled = True
     while index < len(i) - 3:
-        if tls and not counted and i[index] == i[index + 3] and i[index + 1] == i[index + 2] and i[index] != i[index + 1]:
+        if tls and not counted and i[index] == i[index + 3] and i[index + 1] == i[index + 2] and \
+                i[index] != i[index + 1]:
             count += 1
             counted = True
         elif not ssled and i[index + 1] == i[index + 3] and str(i[index + 2:index + 4] + i[index + 2]) in b:
             ssl += 1
             ssled = True
         index += 1
-print count
-print ssl
+print(count)
+print(ssl)
