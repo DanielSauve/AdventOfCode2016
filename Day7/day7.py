@@ -1,5 +1,5 @@
 import re
-f = open('../resources/day7.txt', 'r').read().split("\n")
+f = open('day7.txt', 'r').read().split("\n")
 count = 0
 ssl = 0
 for i in f:

@@ -1,4 +1,4 @@
-f = open('../resources/day6.txt').read().split()
+f = open('day6.txt').read().split()
 
 out1 = []
 out2 = []

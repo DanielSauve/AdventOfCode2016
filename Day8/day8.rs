@@ -5,7 +5,7 @@ use std::ops::Index;
 fn main(){
     let mut array = [[false; 50]; 6];
     let mut input = String::new();
-    let mut file = File::open("../resources/day8.txt").unwrap();
+    let mut file = File::open("day8.txt").unwrap();
     match file.read_to_string(&mut input){
         Err(e) => panic!("Could not open file: {}", e),
         Ok(_) => ()

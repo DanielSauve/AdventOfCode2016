@@ -1,4 +1,4 @@
-f = open('../resources/day2.txt').read().split("\n")
+f = open('day2.txt').read().split("\n")
 pad = [[None, None, 1, None, None], [None, 2, 3, 4, None], [5, 6, 7, 8, 9], [None, "A", "B", "C", None], [None, None, "D", None, None]]
 x, y = 0, 2
 code = []

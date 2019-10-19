@@ -1,4 +1,4 @@
-f = open('../resources/day4.txt', 'r').read().split('\n')
+f = open('day4.txt', 'r').read().split('\n')
 total = 0
 
 for i in f:

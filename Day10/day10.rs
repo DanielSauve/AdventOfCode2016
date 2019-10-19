@@ -24,7 +24,7 @@ impl Robot {
 fn main() {
     let mut robots: HashMap<u8, Robot> = HashMap::new();
     let mut input = String::new();
-    let mut file = File::open("../resources/day10.txt").unwrap();
+    let mut file = File::open("day10.txt").unwrap();
     match file.read_to_string(&mut input) {
         Err(e) => panic!("Could not open file: {}", e),
         Ok(_) => (),
