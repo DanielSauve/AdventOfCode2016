@@ -1,4 +1,4 @@
-f = open("../resources/day3.txt").read().split("\n")
+f = open("day3.txt").read().split("\n")
 n = 0
 for t in f:
     x = [int(num) for num in t.split()]

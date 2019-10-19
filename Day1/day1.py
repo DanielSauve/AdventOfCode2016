@@ -3,7 +3,7 @@ def check():
         print abs(X)+abs(Y)
     P.append({X, Y})
 
-f = open('../resources/day1.txt', 'r').read().split(", ")
+f = open('day1.txt', 'r').read().split(", ")
 X, Y, D, P = 0, 0, 1, []
 for s in f:
     z = int(s[1:])

@@ -1,4 +1,4 @@
-f = open("../resources/day3.txt").read().split("\n")
+f = open("day3.txt").read().split("\n")
 array = []
 j = 0
 while j < f.__len__():
