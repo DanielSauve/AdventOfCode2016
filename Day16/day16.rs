@@ -1,5 +1,5 @@
-use std::str::FromStr;
 use std::ops::Index;
+use std::str::FromStr;
 
 fn main() {
     let len = 272;
@@ -9,8 +9,8 @@ fn main() {
         unsafe {
             let mut vec = b.as_mut_vec();
             vec.reverse();
-            for i in 0..vec.len(){
-                if vec[i] == 49{
+            for i in 0..vec.len() {
+                if vec[i] == 49 {
                     vec[i] = 48;
                 } else {
                     vec[i] = 49;
